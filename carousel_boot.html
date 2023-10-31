@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        img {
+            width: 100px;
+            height: 400px;
+        }
+
+        p,
+        h5 {
+            color: black;
+            font-size: 20px;
+        }
+
+        .carousel .carousel-indicators button {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            /* background-color: blue;  */
+        }
+        a:hover{
+          background-color: blue;
+          border-radius:5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">Content</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <ul class="nav nav-pills p-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Content</a>
+        </li>
+      </ul>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://i1.sndcdn.com/artworks-000380073633-6fv9rd-t500x500.jpg" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Image1</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://thumbs.dreamstime.com/b/abstract-seascape-palm-tree-tropical-beach-background-abstract-seascape-palm-tree-tropical-beach-background-blur-bokeh-146142855.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Image2</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://lh3.googleusercontent.com/h_bcmzTE2T0mQ-5kysgk-Vla4Y13rNhVZ2xBw6yow3tMwMHroX3LUUPKgTYyx4wQw2rTXR9xrF991B_Ctrd7TVZoibo=w640-h400-e365-rj-sc0x00ffffff"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Image3</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Bootstrap</h2>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, sit soluta. Qui nulla minima, quibusdam quia voluptas rerum a esse, dolor quod explicabo nostrum est! Sed deserunt aliquid natus numquam!</p>
+              <a href="#" class="btn btn-primary">More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Templates</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nesciunt quasi mollitia rerum eum sequi placeat alias tempore quaerat, accusantium voluptatum voluptas vitae? Quis cupiditate ut odit itaque placeat perferendis?</p>
+              <a href="#" class="btn btn-primary">More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Blog</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam obcaecati nam ut vel eius, minima soluta, earum mollitia, neque nesciunt est aliquid ipsum ullam temporibus voluptatem eos quam architecto! Voluptatem?</p>
+                <a href="#" class="btn btn-primary">More!</a>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+
+</html>
